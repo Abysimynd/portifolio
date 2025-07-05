@@ -17,7 +17,7 @@
     --subtitle-style: bold;
     --text-style: light;
 
-    --container-padding: 30px 2%;
+    --container-padding: 50px 2%;
 }
 
 * {
@@ -238,4 +238,90 @@ body {
     flex-wrap: wrap;
     gap: 5px;
     list-style-type: none;
+}
+
+#contanct {
+    width: 100%;
+    height: auto;
+}
+
+#contact .container {
+    display: flex;
+    flex-wrap: nowrap;
+    flex-direction: column;
+    align-items: center;
+}
+
+#contact .container .subtitle {
+    color: var(--color-three);
+    width: 300px;
+    border-bottom: 3px solid var(--color-three);
+    text-align: center;
+}
+
+#contact #contact-form {
+    width: 60%;
+    padding: 30px 2%;
+    border: 2px solid var(--color-three);
+    border-radius: 15px;
+    box-shadow: -8px 9px 11px 1px #3b3b3b9c;
+    -webkit-box-shadow: -8px 9px 11px 1px #3b3b3b9c;
+    -moz-box-shadow: -8px 9px 11px 1px #3b3b3b9c;
+}
+
+#contact #contact-form input {
+    width: 100%;
+    height: 36px;
+    margin-top: 15px;
+    padding: 8px;
+    border-radius: 5px;
+    border: 1px solid var(--black-color-100);
+    outline: none;
+}
+
+#contact #contact-form textarea {
+    width: 100%;
+    height: 300px;
+    margin-top: 15px;
+    resize: vertical;
+    padding: 8px;
+    border-radius: 5px;
+    outline: none;
+    border: 1px solid var(--black-color-100);
+}
+
+#contact #contact-form input:focus::placeholder,
+#contact #contact-form textarea:focus::placeholder {
+    font-size: 10px;
+    position: absolute;
+    top: 2px;
+}
+
+#contact #contact-form input[type="submit"] {
+    max-width: 300px;
+    cursor: pointer;
+    border: 1px solid var(--black-color-100);
+}
+
+#contact #contact-form input[type="submit"]:hover {
+    transition: all .15s ease-in;
+    border-color: var(--color-three);
+    background-color: var(--color-three);
+    color: var(--white-color-100);
+}
+
+/* Footer Section */
+#footer {
+    width: 100%;
+    height: auto;
+    min-height: 60px;
+    background-color: var(--color-one);
+}
+
+#footer .container {
+    color: var(--white-color-100);
+}
+
+#footer .container .text {
+    text-align: center;
 }
