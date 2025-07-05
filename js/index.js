@@ -3,6 +3,7 @@ window.onload = e => {
 navbarActiveItem();
 hasProjects();
 menuControl();
+formControl();
 
 function navbarActiveItem() {
     let navItems = document.querySelectorAll('#header .navbar .nav .nav-link');
@@ -51,6 +52,14 @@ function menuControl() {
         e.stopPropagation
 
         navbar.style.left = '-100%';
+    });
+}
+
+function formControl() {
+    let form = document.getElementById('contact-form');
+    form.addEventListener('submit', e => {
+        e.preventDefault;
+        e.stopPropagation;
     });
 }
 
