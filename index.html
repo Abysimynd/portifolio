@@ -6,6 +6,7 @@
 
     <!-- CSS -->
     <link rel="stylesheet" href="css/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet" />
 
     <!-- Javascript -->
     <script src="js/index.js"></script>
@@ -17,16 +18,24 @@
 <!-- Navbar Section -->
 <section id="header">
     <header class="container">
+        <button id="open-navbar" class="material-symbols-outlined">menu</button>
         <div class="logo">
             <h1 class="title">Keiliel Oliveira</h1>
         </div>
         <nav class="navbar">
+            <button id="close-navbar" class="material-symbols-outlined">close</button>
             <ul class="nav">
                 <li class="nav-item">
-                    <a href="#" class="nav-link active-nav-item">Home</a>
+                    <a href="#about" class="nav-link active-nav-item">Sobre</a>
                 </li>
                 <li class="nav-item">
-                    <a href="#" class="nav-link">Sobre</a>
+                    <a href="#training" class="nav-link">Formação</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#portfolio" class="nav-link">Portifolio</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#contact" class="nav-link">Contato</a>
                 </li>
             </ul>
         </nav>
@@ -61,6 +70,10 @@
 <section id="portfolio">
     <div class="container">
         <h3 class="subtitle">Meus projetos</h3>
+        <div id="no-projects">
+            <img src="images/chib_maid.png" alt="">
+            <p class="subtitle">Desculpe, ainda não há projetos finalizados!</p>
+        </div>
         <div class="projects">
             <div class="box">
                 <img src="" alt="">
@@ -78,7 +91,7 @@
                 <p class="text">HTML5, CSS, Javascript</p>
                 <a href="#" class="text">Ver projeto</a>
             </div>
-                        <div class="box">
+            <div class="box">
                 <img src="" alt="">
                 <p class="text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Dicta ad repellendus nesciunt explicabo beatae, maxime a at et voluptate illo tempora deleniti enim in. Molestias suscipit rem iusto. Ea, quidem?</p>   
 
@@ -86,7 +99,7 @@
                 <p class="text">HTML5, CSS, Javascript</p>
                 <a href="#" class="text">Ver projeto</a>
             </div>
-                        <div class="box">
+            <div class="box">
                 <img src="" alt="">
                 <p class="text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Dicta ad repellendus nesciunt explicabo beatae, maxime a at et voluptate illo tempora deleniti enim in. Molestias suscipit rem iusto. Ea, quidem?</p>   
 
